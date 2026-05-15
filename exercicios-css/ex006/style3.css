@@ -1,0 +1,57 @@
+/*
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-elemento
+    > = children 
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    width: 400px;
+    padding: 15px;
+}
+
+h1{
+    margin-top: 0;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+a:visited{
+    color: green;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+a:active{
+    color: yellow;
+}
+
+.especial{
+    background-color: rgb(229, 112, 112);
+}
+
+.especial::after{
+    content: '♣';
+}
+
+.especial::before{
+    content: '♣';
+}
+
+#normal{
+    text-decoration: underline;
+    color: blue;
+}
+
+#normal:visited{
+    color: blueviolet;
+}

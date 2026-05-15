@@ -1,0 +1,19 @@
+body{
+    font: 18.66px Arial;
+}
+
+#primeiro{
+    text-align: left;
+}
+
+#segundo{
+    text-align: right;
+}
+
+#terceiro{
+    text-align: center;
+}
+
+#quarto{
+    text-align: justify;
+}

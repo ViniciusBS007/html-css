@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video width="720" poster="./imagens/praia-720p.jpg" controls>
+        <source src="./midia/video-praia-comprimido.mp4" type="video/mp4">
+        <source src="./midia/video-praia-comprimido.mkv" type="video/mkv">
+        <source src="./midia/video-praia-comprimido.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h1>Incorporando vídeos do Youtube de forma externa</h1>
+    <iframe width="720" height="400"src="https://www.youtube.com/embed/K9rzIwPS43U?si=gwUyTeD9t0CQSl9H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Vídeos externos de outras plataformas</h2>
+    <p>Também da pra usar vídeos de outras plataformas além do Youtube. Como Vimeo e a Twitch.</p>
+</body>
+</html>

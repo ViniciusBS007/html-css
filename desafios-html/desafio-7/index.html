@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 7: Imagens Flexíveis</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Está vendo a imagem completa? Pois experimente ampliar ou diminuir a janela do site para ver a imagem de diferentes tamanhos.</p>
+    <!---Lembre-se que: Caso colocar uma imagem de três tamanhos diferentes, deve-se atentar a questão do tamanho. No caso, se eu colocar uma imagem pequena sendo do 265px e uma imagem média que é 740px, devo colocar proporcional ao tamanho a imagem média para a imagem pequena adicionado mais 50px, então, ficaria com 790px a uns 800px se quiser arredondar. O mesmo vale para a imagem média que, no caso, é proporcional a imagem grande 1200px. No final, sera necessário adicionar a tag "img" para adicionar as imagens.-->
+    <!--Utilize "max-width" para ver a imagem no tamanho de acordo com os pixels que específicar para que fique simétrico.-->
+    <picture>
+        <source media="(max-width: 800px)" srcset="./imagens/paisagem-p.png">
+        <source media="(max-width: 1250px)" srcset="./imagens/paisagem-m.png">
+        <img src="./imagens/paisagem-g.png" alt="Imagem Flexível">
+    </picture>
+</body>
+</html>
