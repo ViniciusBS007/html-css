@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando a Função Background-Repeat</title>
+    <style>
+        body{
+            margin: 20px;
+        }
+        
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+
+        .bloco{
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+
+        .no-repeat{
+            width: 300px;
+            height: 200px;
+            background-image: url(./imagens/wallpaper001.jpg);
+            background-repeat: no-repeat;
+        }
+
+        .repeat-x{
+            width: 100%;
+            height: 100px;
+            background-image: url(./imagens/wallpaper003.jpg);
+            background-repeat: repeat-x;
+        }
+
+        .repeat-y{
+            width: 100px;
+            height: 600px;
+            background-image: url(./imagens/wallpaper002.jpg);
+            background-repeat: repeat-y;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bloco no-repeat"></div>
+        <div class="bloco repeat-x"></div>
+        <div class="bloco repeat-y"></div>
+    </div>
+    <h1>Explicação de como funciona a propriedade "background-repeat"</h1>
+    <h2>Repeat e No-Repeat</h2>
+    <p>Basicamente o "background-repeat: repeat" repete a imagem infinitamente independente da dimensão do elemento. Agora já o "background-repeat: no-repeat" não repete a imagem e sim, exibe apenas uma imagem.</p>
+    <h2>Repeat-x e Repeat-y</h2>
+    <p>O "background-repeat: repeat-x" repete a imagem apenas no eixo horizontal, ou seja, da esquerda para a direita. Já o "background-repeat: repeat-y" repete a imagem apenas no eixo vertical, ou seja, de cima para baixo.</p>
+</body>
+</html>
