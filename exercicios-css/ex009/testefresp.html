@@ -6,21 +6,29 @@
     <title>Tornando o Fundo Responsivo com Background-size</title>
     <style>
         body{
-            background-color: aqua;
-            background-image: url(./imagens/wallpaper002.jpg);
-            width: 100%;
             height: 100vh;
+            /*background-color: aqua;
+            background-image: url(./imagens/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+
+            background: aqua url(./imagens/wallpaper002.jpg) center center / cover no-repeat fixed;
+
+            /*Coloque o / antes de colocar o cover ou coloque separado (no caso, usar o "background-size" separado a shorthand*/
         }
+
+        /*Shorthand - background
+        color > image > position > repeat > / size > attachment
+        */
         
         main{
             background-color:white;
             border: 1px solid black;
             border-radius: 10px;
-            width: 400px;
-            padding: 8px;
+            width: 500px;
+            padding: 10px;
             margin: auto;
             text-align: center;
         }
@@ -29,7 +37,7 @@
 <body>
     <main>
         <h1>Tornando a Imagem de Fundo Responsivo</h1>
-        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit ipsum culpa dignissimos nemo aspernatur inventore, nostrum voluptas, omnis cum saepe corporis ex reiciendis ab et sit blanditiis debitis molestiae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint voluptatum amet quae quas minus maiores explicabo corporis cumque dignissimos. Provident illum odit, porro id ratione voluptate fugit placeat cupiditate eligendi!lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit ipsum culpa dignissimos nemo aspernatur inventore, nostrum voluptas, omnis cum saepe corporis ex reiciendis ab et sit blanditiis debitis molestiae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint voluptatum amet quae quas minus maiores explicabo corporis cumque dignissimos. Provident illum odit, porro id ratione voluptate fugit placeat cupiditate eligendi!lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit ipsum culpa dignissimos nemo aspernatur inventore, nostrum voluptas, omnis cum saepe corporis ex reiciendis ab et sit blanditiis debitis molestiae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint voluptatum amet quae quas minus maiores explicabo corporis cumque dignissimos. Provident illum odit, porro id ratione voluptate fugit placeat cupiditate eligendi!</p>
     </main>
 </body>
 </html>
