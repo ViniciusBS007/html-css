@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(./imagens/espaco.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+div#astronauta{
+    background-image: url(./imagens/astronauta.png);
+    width: 500px;
+    height: 86vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    
+    left: 50%;
+    right: 50%;
+
+    transform: translate(-50%, 15%);
+}
