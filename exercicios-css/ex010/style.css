@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    width: 400px;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+tr.topo{
+    text-align: center;
+}
+
+tr.linha{
+    background-color: lightgray;
+}
+
+td.destaque{
+    background-color: yellow;
+}
+
+td.cor{
+    color: red;
+}
