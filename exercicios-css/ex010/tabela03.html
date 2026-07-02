@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construindo uma tabela por completo</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .palavra{
+            text-align: left;
+            background-color: gray;
+            color: white;
+        }
+
+        .num{
+            text-align: center;
+            background-color: gray;
+            color: white;
+        }
+
+        .populacao{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela da População Brasileira de 2025</h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="palavra">Nome do município</th>
+                <th class="num">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td  class="populacao">11.904.961</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="populacao">6.730.729</td>
+            </tr>
+            <tr>
+                <td>Brasília</td>
+                <td class="populacao">2.996.899</td>
+            </tr>
+            <tr>
+                <td>Fortaleza</td>
+                <td class="populacao">2.578.483</td>
+            </tr>
+            <tr>
+                <td>Salvador</td>
+                <td class="populacao">2.564.204</td>
+            </tr>
+            <tr>
+                <td>Belo Horizonte</td>
+                <td class="populacao">2.415.872</td>
+            </tr>
+            <tr>
+                <td>Manaus</td>
+                <td class="populacao">2.303.732</td>
+            </tr>
+            <tr>
+                <td>Curitiba</td>
+                <td class="populacao">1.830.795</td>
+            </tr>
+            <tr>
+                <td>Recife</td>
+                <td class="populacao">1.588.376</td>
+            </tr>
+            <tr>
+                <td>Goiânia</td>
+                <td class="populacao">1.503.256</td>
+            </tr>
+            <tr>
+                <td>Belém</td>
+                <td class="populacao">1.397.315</td>
+            </tr>
+            <tr>
+                <td>Porto Alegre</td>
+                <td class="populacao">1.388.794</td>
+            </tr>
+            <tr>
+                <td>São Luís</td>
+                <td class="populacao">1.089.215</td>
+            </tr>
+            <tr>
+                <td>Maceió</td>
+                <td class="populacao">994.952</td>
+            </tr>
+            <tr>
+                <td>Campo Grande</td>
+                <td class="populacao">962.883</td>
+            </tr>
+            <tr>
+                <td>Teresina</td>
+                <td class="populacao">905.692</td>
+            </tr>
+            <tr>
+                <td>João Pessoa</td>
+                <td class="populacao">897.633</td>
+            </tr>
+            <tr>
+                <td>Natal</td>
+                <td class="populacao">784.249</td>
+            </tr>
+            <tr>
+                <td>Cuiabá</td>
+                <td class="populacao">691.875</td>
+            </tr>
+            <tr>
+                <td>Aracaju</td>
+                <td class="populacao">630.932</td>
+            </tr>
+            <tr>
+                <td>Florianópolis</td>
+                <td class="populacao">587.486</td>
+            </tr>
+            <tr>
+                <td>Porto Velho</td>
+                <td class="populacao">517.709</td>
+            </tr>
+            <tr>
+                <td>Macapá</td>
+                <td class="populacao">489.676</td>
+            </tr>
+            <tr>
+                <td>Boa Vista</td>
+                <td class="populacao">485.477</td>
+            </tr>
+            <tr>
+                <td>Rio Branco</td>
+                <td class="populacao">389.001</td>
+            </tr>
+            <tr>
+                <td>Vitória</td>
+                <td class="populacao">343.378</td>
+            </tr>
+            <tr>
+                <td>Palmas</td>
+                <td class="populacao">328.499</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="palavra">Total Capitais</th>
+                <td class="num">49.302.073</td>
+            </tr>
+            <tr>
+                <th class="palavra">Total Brasil</th>
+                <th class="num">213.421.037</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
