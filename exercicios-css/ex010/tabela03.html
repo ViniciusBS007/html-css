@@ -14,6 +14,12 @@
             border-collapse: collapse;
         }
 
+        /* No caso, existe também os "impares" e "pares", no caso, ele sempre vai pegar, se for impar, a primeira coluna depois a terceira, a quinta e sucessivamente de acordo com os números impars. O mesmo se aplica com os pares.
+        Para coloca-los, basta trocar "2n" por "odd" (par) e "even" (impar) ou "2n" (par) e "2n-1" (impar).*/
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
         caption{
             font-size: 1.3em;
             font-weight: bold;
