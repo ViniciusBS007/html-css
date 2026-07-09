@@ -14,6 +14,13 @@
             border-collapse: collapse;
         }
 
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.462);
+        }
+
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -39,10 +46,11 @@
 <body>
     <h1>Tabela da População Brasileira de 2025</h1>
     <table>
+        <caption>Tabela da População das Capitais Brasileiras</caption>
         <thead>
             <tr>
-                <th class="palavra">Nome do município</th>
-                <th class="num">População</th>
+                <th class="palavra" scope="col">Nome do município</th>
+                <th class="num" scope="col" style="width: 120px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -161,7 +169,7 @@
                 <td class="num">49.302.073</td>
             </tr>
             <tr>
-                <th class="palavra">Total Brasil</th>
+                <th class="palavra" scope="row">Total de Habitantes</th>
                 <th class="num">213.421.037</th>
             </tr>
         </tfoot>
