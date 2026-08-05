@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        #site{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <!-- O tamanho padrão é 300(altura)x150(largura)-->
+    <p>Acesse o site <iframe id="site" src="https://www.cursoemvideo.com/" frameborder="0" height="500px" width="500px" scolling="no"></iframe>para aprender a programar</p>
+    <!--Caso você queira usar o "style" para mudar o tamanho do "iframe" não tem problema mas lembre-se: O "style" SEMPRE SERÁ PREDOMINANTE, OU SEJA, SE COLOCAR O TAMANHO DO "iframe" NO HTML E COLOCAR NO CSS OUTRO TAMANHO, O QUE O PROGRAMA VAI USAR SERÁ SEMPRE O DO CSS OU "style".-->
+    <p>Acesse o site <iframe src="https://www.google.com/?hl=pt_BR&zx=1785783256321" frameborder="1" width="500px"></iframe> <a href="https://www.google.com/?hl=pt_BR&zx=1785783256321" target="_blank">Site do Google</a></p>
+    <p>OBS: Veja que um funciona o iframe porém o outro não. Isso acontece pois alguns sites, não dão permissão para o uso do iframe por criadores de terceiros pela empresa. Qualquer empresa ou pessoa que seja dona ou tenha um site criado por terceiros, pode não querer dar permissão ou não tem a permissão de se usar o iframe por segurança.</p>
+</body>
+</html>
