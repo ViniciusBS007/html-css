@@ -6,8 +6,12 @@
     <title>Criando um formulário</title>
 </head>
 <body>
+    <!-- Vamos as diferenças e significados de cada tag:
+      Action: é i gatilho quando enviamos o formulário para que eleseja enviado;
+      Method: um método para mandar um arquivo, foto, imagem ou documento mostrando ou não de forma explicita este documento. Nele temos o GET que mostra totalmente os dados e o POST que esconde as informações. OBS: Estes não são métodos de segurança avançadas ou seguras para apenas coloca-las. São só formas ou maneiras de manter informações um pouco mais sigilosas ou não.
+      Autocomplete: serve para completar com algo anterirormente escrito. Pode ser habilitado com "on" e desabilidado com "off".-->
     <h1>Primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p><label for="inome">Nome:</label><input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label><input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
