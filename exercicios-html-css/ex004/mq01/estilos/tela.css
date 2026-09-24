@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Estilo para telas*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+header{
+    background-color: rgb(215, 215, 215);
+}
+
+header > h1{
+    text-align: center;
+}
+
+menu li{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 8px;
+    color: white;
+    background-color: rgb(26, 25, 25);
+}
+
+menu ul{
+    list-style-type: none;
+    background-color: gray;
+}
+
+article{
+    width: 600px;
+    display: block;
+    margin: auto;
+}
