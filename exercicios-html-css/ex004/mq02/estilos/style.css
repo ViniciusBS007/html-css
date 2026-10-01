@@ -9,7 +9,7 @@
 }
 
 html, body{
-    background-color:aqua;
+    background-color:#233eff;
     height: 100vh;
     width: 100vw;
     background-size: contain;
@@ -17,7 +17,7 @@ html, body{
 }
 
 h1{
-    color: rgb(56, 56, 241);
-    text-shadow: 1px 1px 0px rgb(56, 56, 227);
+    color: rgb(247, 247, 250);
+    text-shadow: 2px 2px 0px rgb(7, 7, 157);
     padding: 10px;
 }
