@@ -9,12 +9,18 @@
             background-color: lightsalmon;
 
             display: flex;
+            flex-direction: row-reverse;
+            /* Existem quatro tipos do flex-direction:
+            row: Faz umalinha da direita pra esquerda do que está dentro do conteúdo pai ou do container (main-axis direita e cross-axis embaixo do lado esquerdo);
+            row-reverse: É o contrário do row, começa da esquerda pra direita (main-axis esquerdo e cross-axis embaixo do lado direito);
+            column: Um em cima do outro, os conteúdos dentro do container ficam um sobre o outro. No caso, começa de cima pra baixo (main-axis baixo no lado esquerdo e cross-axis em cima pra direita);
+            column-reverse: É o contrário do column, os elementos começam de baixo pra cima (main-axis cima do lado esquerda e cross-axis pra direito)
+            */
         }
 
         div.items{
             background-color: lightskyblue;
-
-            flex: auto;
+            padding: 10px;
             border: 1px solid black;
             text-align: center;
         }
