@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row-reverse wrap;
+            /* Existem três tipos de flex-wrap que são: 
+            -nowrap: que vai comprimir o conteúdo de dentro do container até o limite; 
+            -wrap: já vai fazer o conteúdo (ou item) caber dentro do container porém, quando é comprimido até o limite ou próximo, ele coloca o item abaixo da linha. Ex: se tiver três items, se diminuirmos até não caber mais, o último conteúdo vai pra baixo pra poder caber no conteiner ainda;
+            -wrap-reverse: é a mesma coisa que o wrap mas com exceção de que em vez do último item ir pra baixo, é o primeiro que vai pra cima para que possa caber no container.
+            */
+        }
+
+        div.items{
+            background-color: lightskyblue;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">A Exemplo de bloco</div>
+        <div class="items">B Exemplo de bloco</div>
+        <div class="items">C Exemplo de bloco</div>
+        <div class="items">D Exemplo de bloco</div>
+        <div class="items">E Exemplo de bloco</div>
+        <div class="items">F Exemplo de bloco</div>
+        <div class="items">G Exemplo de bloco</div>
+    </div>
+</body>
+</html>
