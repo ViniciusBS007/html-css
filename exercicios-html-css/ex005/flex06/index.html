@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-content</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+            height: 400px;
+            /*
+            O align-content serve para alinhar o conteúdo que está comprimido, no caso, o conteúdo que está grudado um como o outro. Ele tem várias tags sendo cada uma:
+            -flex-start: Serve para alinhar o cross-start do container para cima no canto esquerdo;
+            -flex-end: Serve para alinhar com o cross-end no canto esquerdo pra baixo;
+            -stretch: Aumenta a altura ou estica o tamanho dos items para que fiquem na altura do container (cadam um deles não é no todo);
+            -space-between: Ele vai dividir em duas partes separando-as no meio, porém se separadas em três partes, será dividido em três deixando um expaço menor cada vez mais que é separada;
+            -space-evenly: É a mesma coisa que o space-between coma diferença de ficar no meio quando é uma linha só ou que possa caber numa linha só e, quando é menor o tamanho do conteúdo, ele dividi os espaços entre os items mais simetricamente;
+            -center: Centraliza o conteúdo no meio.
+            */
+        }
+
+        div.items{
+            background-color: lightskyblue;
+            padding: 40px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+        <div class="items">D</div>
+        <div class="items">E</div>
+        <div class="items">F</div>
+        <div class="items">G</div>
+        <div class="items">H</div>
+        <div class="items">I</div>
+        <div class="items">J</div>
+        <div class="items">K</div>
+        <div class="items">L</div>
+        <div class="items">M</div>
+    </div>
+</body>
+</html>
