@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Items | Flex-basis</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap; /*Se você usar a propriedade do "row wrap" ele vai quebrar ou no caso, ele vai dividir os itens quando diminuir a tela. Se você quiser que caibam é só usar o "row nowrap". Pra poder colocar os itens do jeito que quiser, basta saber colocar o código ou tag certa.*/
+        }
+
+        div.items{
+            background-color: lightskyblue;
+
+            flex-basis: 150px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">A</div>
+        <div class="items">Conteúdo menor</div>
+        <div class="items">C</div>
+        <div class="items">Conteúdo bem maior</div>
+        <div class="items">E</div>
+        <div class="items">Conteúdo bem maior em comparação aos outros</div>
+        <div class="items">G</div>
+    </div>
+</body>
+</html>
